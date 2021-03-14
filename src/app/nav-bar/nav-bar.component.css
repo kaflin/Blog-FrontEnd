@@ -1,0 +1,43 @@
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+.fixed-header {
+  position:fixed;
+  z-index:1000;
+  height: 50px;
+  width:100%;
+}
+.mat-elevation-z6{
+  background-color:darkslategrey;
+  position: relative;
+  z-index: 555;
+
+}
+mat-sidenav
+{
+  background-color:darkslategrey;
+  width:35%;
+}
+a
+{
+  color: white;
+  text-decoration:none;
+}
+
+
+/*.mat-elevation-z5 {*/
+/*  position: relative;*/
+/*}*/
+
+/*.sticky {*/
+/*  position: fixed;*/
+/*  top: 50px;*/
+/*}*/
+
+
+
+
