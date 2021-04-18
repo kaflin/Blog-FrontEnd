@@ -5,27 +5,34 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+
 .fixed-header {
-  position:fixed;
-  z-index:1000;
+  position: fixed;
+  z-index: 1000;
   height: 50px;
-  width:100%;
+  width: 100%;
 }
-.mat-elevation-z6{
-  background-color:darkslategrey;
+
+.mat-elevation-z6 {
+  background-color: darkslategrey;
   position: relative;
   z-index: 555;
 
 }
-mat-sidenav
+.nav-link
 {
-  background-color:darkslategrey;
-  width:35%;
+  height: 100%;
 }
-a
-{
+
+mat-sidenav {
+  background-color: darkslategrey;
+  width: 28%;
+}
+
+
+a {
   color: white;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 
