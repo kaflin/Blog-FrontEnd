@@ -1,4 +1,5 @@
 import {Component, HostListener, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-nav-bar',
@@ -14,7 +15,12 @@ export class NavBarComponent implements OnInit {
     this.isSticky = window.pageYOffset >= 250;
   }
 
-  constructor() { }
+  constructor(private router: Router) {
+  }
+
+  navigateToFirst() {
+    this.router.navigate(['register'])
+  }
 
   ngOnInit(): void {
   }
