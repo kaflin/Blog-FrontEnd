@@ -12,8 +12,10 @@ import {MatIconModule} from '@angular/material/icon';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { BodyComponent } from './body/body.component';
-import {UserRegisterComponent} from './user-register/user-register.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -21,7 +23,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     AppComponent,
     NavBarComponent,
     BodyComponent,
-    UserRegisterComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     MatButtonModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
