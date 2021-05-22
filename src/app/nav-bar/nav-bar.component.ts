@@ -11,18 +11,21 @@ export class NavBarComponent implements OnInit {
   isSticky: boolean = false;
 
   @HostListener('window:scroll', ['$event'])
+
   checkScroll() {
     this.isSticky = window.pageYOffset >= 250;
+  }
+  ngOnInit(): void {
   }
 
   constructor(private router: Router) {
   }
 
   navigateToFirst() {
-    this.router.navigate(['register'])
+    this.router.navigate(['login']);
   }
 
-  ngOnInit(): void {
+  navigateToSecond() {
+    this.router.navigate(['register']);
   }
-
 }
