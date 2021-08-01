@@ -18,7 +18,7 @@ export class RegisterComponent implements OnInit {
   doNotMatch = false;
   errorEmailExists = false;
   errorUserExists = false;
-  registerForm =this.fb.group(
+  registerForm = this.fb.group(
     {
       username: [
         '',
