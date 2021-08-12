@@ -2,6 +2,7 @@ import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {LoginRequestPayload} from '../Model/Login-request.payload';
 import {AuthService} from '../shared/auth.service';
+import {Router} from '@angular/router';
 
 
 @Component({
@@ -15,9 +16,10 @@ export class LoginComponent implements OnInit {
   username?: ElementRef;
   loginForm: FormGroup;
   loginRequestPayload: LoginRequestPayload;
+  isError: boolean;
 
   // constructor(private fb: FormBuilder) { }
-  constructor(private authService: AuthService) {
+  constructor(private authService: AuthService, private router: Router) {
     this.loginRequestPayload = {
       username: '',
       password: ''
@@ -57,7 +59,13 @@ export class LoginComponent implements OnInit {
 
    this.authService.login(this.loginRequestPayload).subscribe(data =>
     {
-      console.log('Login successful');
+      if (data) {
+        this.isError = false;
+        this.router.navigateByUrl('/');
+        // this.toastr.success('Login Successful');
+      } else {
+        this.isError = true;
+      }
     });
 }
 
