@@ -142,10 +142,6 @@
       "app",
       "camelCase"
     ],
-    "typedef": [
-      false,
-      "call-signature"
-    ],
     "component-selector": [
       true,
       "element",
