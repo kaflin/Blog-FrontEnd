@@ -20,6 +20,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {NgxWebstorageModule} from 'ngx-webstorage';
 import { TokenInterceptor } from './token-interceptor';
 import { HomeComponent } from './home/home.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { PostTileComponent } from './shared/post-tile/post-tile.component';
+import { SideBarComponent } from './shared/side-bar/side-bar.component';
+import { VoteButtonComponent } from './shared/vote-button/vote-button.component';
+import { SubredditSideBarComponent } from './shared/subreddit-side-bar/subreddit-side-bar.component';
+import { CreateSubredditComponent } from './subreddit/create-subreddit/create-subreddit.component';
+import { CreatePostComponent } from './post/create-post/create-post.component';
+import { ListSubredditsComponent } from './subreddit/list-subreddits/list-subreddits.component';
 
 
 @NgModule({
@@ -29,7 +37,14 @@ import { HomeComponent } from './home/home.component';
     BodyComponent,
     LoginComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    PostTileComponent,
+    SideBarComponent,
+    VoteButtonComponent,
+    SubredditSideBarComponent,
+    CreateSubredditComponent,
+    CreatePostComponent,
+    ListSubredditsComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +60,7 @@ import { HomeComponent } from './home/home.component';
     HttpClientModule,
     NgbModule,
     NgxWebstorageModule.forRoot(),
+    FontAwesomeModule
   ],
   providers: [
     {
