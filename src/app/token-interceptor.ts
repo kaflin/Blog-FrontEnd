@@ -8,7 +8,7 @@ import {
 import {Injectable} from '@angular/core';
 import {AuthService} from './shared/auth.service';
 import {BehaviorSubject, Observable, throwError} from 'rxjs';
-import {catchError, switchMap} from 'rxjs/operators';
+import {catchError, filter, switchMap, take} from 'rxjs/operators';
 import {LoginResponse} from './Model/login-response';
 
 @Injectable({
@@ -39,8 +39,8 @@ export class TokenInterceptor implements HttpInterceptor{
     }));
   }
 
-  // @ts-ignore
-  handleAuthErrors(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>>{
+ // @ts-ignore
+  private handleAuthErrors(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>>{
     if (!this.isTokenRefreshing) {
       this.isTokenRefreshing = true;
       this.refreshTokenSubject.next(null);
@@ -52,6 +52,16 @@ export class TokenInterceptor implements HttpInterceptor{
           return next.handle(this.addToken(req, refreshTokenResponse.authenticationToken));
         })
       );
+    }
+    else
+    {
+       return this.refreshTokenSubject.pipe(
+         filter(result => result !== null),
+         take(1),
+         switchMap((res) =>
+         {
+           return next.handle(this.addToken(req, this.authService.getJwtToken()));
+         }));
     }
   }
 
