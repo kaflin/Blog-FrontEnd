@@ -30,6 +30,7 @@ import { CreatePostComponent } from './post/create-post/create-post.component';
 import { ListSubredditsComponent } from './subreddit/list-subreddits/list-subreddits.component';
 import {EditorModule} from '@tinymce/tinymce-angular';
 import { ViewPostComponent } from './post/view-post/view-post.component';
+import {NgxPageScrollCoreModule} from 'ngx-page-scroll-core';
 
 
 @NgModule({
@@ -64,7 +65,8 @@ import { ViewPostComponent } from './post/view-post/view-post.component';
     NgbModule,
     NgxWebstorageModule.forRoot(),
     FontAwesomeModule,
-    EditorModule
+    EditorModule,
+    NgxPageScrollCoreModule.forRoot({ duration: 1600 })
   ],
   providers: [
     {

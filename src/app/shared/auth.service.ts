@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import {EventEmitter, Injectable, Output} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {LoginRequestPayload} from '../Model/Login-request.payload';
 import {LoginResponse} from '../Model/login-response';
@@ -11,6 +11,7 @@ import {Observable} from 'rxjs';
 })
 export class AuthService
 {
+  @Output() loggedIn: EventEmitter<boolean> = new EventEmitter();
   constructor(private httpClient: HttpClient, private localStorage: LocalStorageService) {
   }
   login( loginRequestPayload: LoginRequestPayload): Observable<boolean>
@@ -51,7 +52,7 @@ export class AuthService
 
   getRefreshToken(){
     return this.localStorage.retrieve('refreshToken');
-
   }
+
 }
 

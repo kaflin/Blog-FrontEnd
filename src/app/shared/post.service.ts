@@ -21,7 +21,7 @@ export class PostService {
   }
 
   getPost(postId: number): Observable<PostModel>{
-    return this.http.get<PostModel>('http://localhost:8081/api/posts/{id}' + postId);
+    return this.http.get<PostModel>('http://localhost:8081/api/posts/' + postId);
 
   }
 }

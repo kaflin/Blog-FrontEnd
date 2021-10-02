@@ -32,6 +32,7 @@
     "bootstrap": "^4.5.0",
     "font-awesome": "^4.7.0",
     "ngb-modal": "^2.0.3",
+    "ngx-page-scroll-core": "^7.0.5",
     "ngx-webstorage": "^7.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
