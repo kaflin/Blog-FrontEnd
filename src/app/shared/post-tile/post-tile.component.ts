@@ -13,7 +13,7 @@ export class PostTileComponent implements OnInit {
 
   // posts$: Array<PostModel>;
   faComments = faComments;
-  @Input() posts: PostModel[];
+  @Input() posts2: PostModel[];
   constructor( private router: Router) {
   }
 
