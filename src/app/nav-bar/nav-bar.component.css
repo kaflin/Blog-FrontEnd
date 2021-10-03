@@ -9,7 +9,6 @@
 .fixed-header {
   position: fixed;
   z-index: 1000;
-  height: 50px;
   width: 100%;
 }
 
@@ -17,18 +16,22 @@
   background-color: darkslategrey;
   position: relative;
   z-index: 555;
-
 }
 .nav-link
 {
   height: 100%;
 }
 
-mat-sidenav {
+mat-sidenav{
   background-color: darkslategrey;
   width: 28%;
+  height: 100%;
+  position: fixed; /* Stay in place */
+  top: 0; /* Stay at the top */
+  left: 0;
+  right:0;
+  padding-top: 60px; /* Place content 60px from the top */
 }
-
 
 a {
   color: white;
