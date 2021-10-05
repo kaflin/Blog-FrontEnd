@@ -24,7 +24,7 @@
 
 mat-sidenav{
   background-color: darkslategrey;
-  width: 28%;
+  width: 200px;
   height: 100%;
   position: fixed; /* Stay in place */
   top: 0; /* Stay at the top */
@@ -37,16 +37,6 @@ a {
   color: white;
   text-decoration: none;
 }
-
-
-/*.mat-elevation-z5 {*/
-/*  position: relative;*/
-/*}*/
-
-/*.sticky {*/
-/*  position: fixed;*/
-/*  top: 50px;*/
-/*}*/
 
 
 

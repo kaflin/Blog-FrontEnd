@@ -26,7 +26,7 @@
         The password and its confirmation do not match!
       </div>
   </div>
-
+<div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8">
       <form name="form" role="form" (ngSubmit)="register()" [formGroup]="registerForm" *ngIf="!success">
@@ -87,7 +87,7 @@
         </div>
 
         <div class="form-group row">
-          <label class="col-md-4 col-form-label text-md-left" for="password">New password</label>
+          <label class="col-md-4 col-form-label text-md-left" for="password">Password</label>
           <div class="col-md-6">
           <input type="password" class="form-control" id="password" name="password"
                  formControlName="password">
@@ -114,7 +114,7 @@
         </div>
 
         <div class="form-group row">
-          <label class="col-md-4 col-form-label text-md-left" for="confirmPassword">New password confirmation</label>
+          <label class="col-md-4 col-form-label text-md-left" for="confirmPassword">Confirm Password</label>
           <div class="col-md-6">
           <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"
                  formControlName="confirmPassword">
@@ -139,7 +139,7 @@
         </div>
 
         <button type="submit" [disabled]="registerForm.invalid" class="btn btn-primary">Register</button>
-        <span style="padding-left: 15px">Existing user? <a routerLink="/login">Log In</a></span>
+        <span style="margin-left: 5px;">Existing user? <a routerLink="/login">Log In</a></span>
       </form>
     </div>
   </div>
@@ -149,6 +149,7 @@
 <!--        <a class="alert-link" (click)="openLogin()" >sign in</a><span>, you can try the default accounts:<br/>- Administrator (login="admin" and password="admin") <br/>- User (login="user" and password="user").</span>-->
 <!--      </div>-->
     </div>
+      </div>
   </div>
     </div>
   </div>
