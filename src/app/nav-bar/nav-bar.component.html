@@ -1,7 +1,7 @@
 <div class="container" style="height:545px;" class="fixed-header">
 
   <mat-toolbar class="mat-elevation-z6">
-    <mat-toolbar-row>
+    <mat-toolbar-row >
       <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
         <mat-icon style="color: white">menu</mat-icon>
       </button>
@@ -21,6 +21,18 @@
           <mat-icon>account_box</mat-icon>
           My Account
         </a>
+        <div class="flex-grow-1 float-right">
+          <div *ngIf="isLoggedIn" ngbDropdown class="float-right">
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button (click)="goToUserProfile()" ngbDropdownItem>Profile</button>
+              <button (click)="logout()" ngbDropdownItem>Logout</button>
+            </div>
+            <button class="userdetails" id="dropdownBasic1" ngbDropdownToggle>
+              <img class="account-icon" src="https://www.redditstatic.com/avatars/avatar_default_08_D4E815.png">
+              {{username}}
+            </button>
+          </div>
+          <div *ngIf="!isLoggedIn">
         <a routerLink="/login" routerLinkActive="active" mat-button (click)="navigateToFirst()">
           <mat-icon>login</mat-icon>
           Login
@@ -29,6 +41,8 @@
           <mat-icon>login</mat-icon>
           Sign Up
         </a>
+      </div>
+      </div>
       </div>
     </mat-toolbar-row>
   </mat-toolbar>

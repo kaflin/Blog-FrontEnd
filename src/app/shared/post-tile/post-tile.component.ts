@@ -24,4 +24,9 @@ export class PostTileComponent implements OnInit {
     this.router.navigateByUrl('/view-post/' + id);
 
   }
+
+  editButtonClick(id: number): void{
+    this.router.navigate(['/edit-post/', + id]);
+
+  }
 }

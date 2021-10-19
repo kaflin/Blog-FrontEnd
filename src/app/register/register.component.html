@@ -1,4 +1,11 @@
-<div class="register-section">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container">
+  <!--<div class="register-section">-->
   <div class="row justify-content-center">
     <div class="col-md-8">
       <div class="card" style="margin-top: 15px">
@@ -137,9 +144,8 @@
           </span>
         </div>
         </div>
-
-        <button type="submit" [disabled]="registerForm.invalid" class="btn btn-primary">Register</button>
-        <span style="margin-left: 5px;">Existing user? <a routerLink="/login">Log In</a></span>
+        <button class="A" type="submit" [disabled]="registerForm.invalid" class="btn btn-primary">Register</button>
+        <span  style="margin-left:5px;">Existing user? <a routerLink="/login">Log In</a></span>
       </form>
     </div>
   </div>
@@ -154,3 +160,5 @@
     </div>
   </div>
 
+</body>
+</html>

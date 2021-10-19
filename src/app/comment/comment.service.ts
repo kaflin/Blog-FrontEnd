@@ -17,4 +17,9 @@ export class CommentService {
   postComment(commentPayload: CommentPayload): Observable<any> {
     return this.httpClient.post<any>('http://localhost:8081/api/comments/save', commentPayload);
   }
+
+  // tslint:disable-next-line:typedef
+  getAllCommentsByUser(name: string) {
+    return this.httpClient.get<CommentPayload[]>('http://localhost:8081/api/comments/by-user/' + name);
+  }
 }

@@ -31,6 +31,7 @@ import { ListSubredditsComponent } from './subreddit/list-subreddits/list-subred
 import {EditorModule} from '@tinymce/tinymce-angular';
 import { ViewPostComponent } from './post/view-post/view-post.component';
 import {NgxPageScrollCoreModule} from 'ngx-page-scroll-core';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import {NgxPageScrollCoreModule} from 'ngx-page-scroll-core';
     CreateSubredditComponent,
     CreatePostComponent,
     ListSubredditsComponent,
-    ViewPostComponent
+    ViewPostComponent,
+    UserProfileComponent,
   ],
   imports: [
     BrowserModule,

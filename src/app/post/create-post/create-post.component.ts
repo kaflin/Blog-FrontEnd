@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {CreatePostPayload} from './create-post.payload';
 import {SubredditModel} from '../../subreddit/subreddit-response';
-import {Router} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {PostService} from '../../shared/post.service';
 import {SubredditService} from '../../subreddit/subreddit-service';
 import {throwError} from 'rxjs';
@@ -20,7 +20,7 @@ export class CreatePostComponent implements OnInit {
   subreddits: Array<SubredditModel>;
 
   constructor(private router: Router, private postService: PostService,
-              private subredditService: SubredditService){
+              private subredditService: SubredditService, private route: ActivatedRoute ){
     this.postPayload = {
       description: '',
       postName: '',
@@ -43,6 +43,15 @@ export class CreatePostComponent implements OnInit {
       error => {
       throwError(error);
       });
+    this.route.paramMap.subscribe(params => {
+      let postId: number;
+      // @ts-ignore
+      postId = +params.get('id');
+      if (postId)
+      {
+        this.getPost(postId);
+      }
+    });
   }
 
 
@@ -61,5 +70,23 @@ export class CreatePostComponent implements OnInit {
   }
   discardPost(): void{
     this.router.navigateByUrl('/');
+  }
+
+  private getPost(postId: number): void{
+    this.postService.updatePost(postId).subscribe(
+      (post: PostModel) => this.editPost(post),
+      (error) => {
+        throwError(error);
+      });
+
+  }
+
+  private editPost(post: PostModel): void {
+    this.createPostForm.patchValue({
+      postName: post.postName,
+      subredditName: post.subredditName,
+      url: post.url,
+      description : post.description
+    });
   }
 }

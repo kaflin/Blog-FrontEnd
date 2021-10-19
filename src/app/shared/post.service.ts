@@ -24,4 +24,13 @@ export class PostService {
     return this.http.get<PostModel>('http://localhost:8081/api/posts/' + postId);
 
   }
+
+  updatePost(postId: number): Observable<any>
+    {
+    return this.http.get('http://localhost:8081/api/posts/update/' + postId);
+    }
+
+  getAllPostsByUser(name: string): Observable<PostModel[]> {
+    return this.http.get<PostModel[]>('http://localhost:8081/api/posts/by-user/' + name);
+  }
 }

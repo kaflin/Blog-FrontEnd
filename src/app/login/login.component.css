@@ -1,7 +1,3 @@
-.login-section{
-  margin: 100px;
-}
-
 .login-failed{
   text-align: center;
   margin: auto;
@@ -35,6 +31,12 @@
   text-transform: uppercase;
   padding: 3px 16px;
   opacity: 1;
+}
+/* Use a media query to add a break point at 954px: */
+@media screen and (max-width: 954px) {
+  .card {
+    width: 100%; /* The width is 100%, when the viewport is 954px or smaller */
+  }
 }
 /*login-failed, .register-success{*/
 /*  text-align: center;*/
