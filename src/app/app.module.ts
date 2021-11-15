@@ -12,7 +12,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { BodyComponent } from './body/body.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -52,24 +52,25 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     ViewPostComponent,
     UserProfileComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MatIconModule,
-    MatListModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatButtonModule,
-    FlexLayoutModule,
-    BrowserAnimationsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    NgbModule,
-    NgxWebstorageModule.forRoot(),
-    FontAwesomeModule,
-    EditorModule,
-    NgxPageScrollCoreModule.forRoot({ duration: 1600 })
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        MatIconModule,
+        MatListModule,
+        MatToolbarModule,
+        MatSidenavModule,
+        MatButtonModule,
+        FlexLayoutModule,
+        BrowserAnimationsModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        NgbModule,
+        NgxWebstorageModule.forRoot(),
+        FontAwesomeModule,
+        EditorModule,
+        NgxPageScrollCoreModule.forRoot({duration: 1600}),
+        FormsModule
+    ],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,

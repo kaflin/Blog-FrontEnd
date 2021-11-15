@@ -1,0 +1,26 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/kaflin/Blog-FrontEnd.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[branch "suraj1"]
+	remote = origin
+	merge = refs/heads/suraj1
+[branch "suraj"]
+	remote = origin
+	merge = refs/heads/suraj
+[branch "login"]
+	remote = origin
+	merge = refs/heads/login
+[branch "RefreshToken"]
+	remote = origin
+	merge = refs/heads/RefreshToken
+[branch "Creation_of_Subreddit"]
+	remote = origin
+	merge = refs/heads/Creation_of_Subreddit

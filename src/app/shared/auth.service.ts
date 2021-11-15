@@ -5,12 +5,14 @@ import {LoginResponse} from '../Model/login-response';
 import {LocalStorageService} from 'ngx-webstorage';
 import {map, tap} from 'rxjs/operators';
 import {Observable, throwError} from 'rxjs';
+import {environment} from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService
 {
+  baseUrl = environment.baseUrl;
   @Output() loggedIn: EventEmitter<boolean> = new EventEmitter();
   @Output() username: EventEmitter<string> = new EventEmitter();
 
@@ -23,7 +25,7 @@ export class AuthService
   }
   login( loginRequestPayload: LoginRequestPayload): Observable<boolean>
   {
-       return this.httpClient.post<LoginResponse>('http://localhost:8081/api/auth/login', loginRequestPayload)
+       return this.httpClient.post<LoginResponse>(this.baseUrl + '/api/auth/login', loginRequestPayload)
         .pipe(map(data => {
           this.localStorage.store('authenticationToken', data.authenticationToken);
           this.localStorage.store('username', data.username);
@@ -40,7 +42,7 @@ export class AuthService
       refreshToken: this.getRefreshToken(),
       username: this.getUserName()
     };
-    return this.httpClient.post<LoginResponse>('http://localhost:8081/api/auth/refresh/token',
+    return this.httpClient.post<LoginResponse>(this.baseUrl + '/api/auth/refresh/token',
       refreshTokenPayload)
       .pipe(tap(response => {
         this.localStorage.store('authenticationToken',
@@ -50,7 +52,7 @@ export class AuthService
 
   }
   logout(): void {
-    this.httpClient.post('http://localhost:8081/api/auth/logout', this.refreshTokenPayload,
+    this.httpClient.post(this.baseUrl + '/api/auth/logout', this.refreshTokenPayload,
       { responseType: 'text' })
       .subscribe(data => {
         console.log(data);

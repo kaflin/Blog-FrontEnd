@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 30fe88bb612d229ebf5a0bcd33a7fd586f96702f suraj_gupta <suraj520876@gmail.com> 1618677099 +0545	branch: Created from origin/suraj1
+30fe88bb612d229ebf5a0bcd33a7fd586f96702f ae9a281289bb1fe8547ed99e0d13563e92a6c0e9 suraj_gupta <suraj520876@gmail.com> 1618760625 +0545	pull --no-stat -v --progress origin main: Fast-forward
+ae9a281289bb1fe8547ed99e0d13563e92a6c0e9 dfde8cc7ac18efe5b438f8bdad41603dec94ade4 suraj_gupta <suraj520876@gmail.com> 1626834422 +0545	merge main: Fast-forward
+dfde8cc7ac18efe5b438f8bdad41603dec94ade4 d86d51adb4d6b722e8f7b13132923d914e4254d1 suraj_gupta <suraj520876@gmail.com> 1626834633 +0545	commit: to check suraj1
+d86d51adb4d6b722e8f7b13132923d914e4254d1 235bafeb91b7d24d4edbf64cc3f1a5f7f3da24de suraj_gupta <suraj520876@gmail.com> 1626835085 +0545	commit: to check suraj1
+235bafeb91b7d24d4edbf64cc3f1a5f7f3da24de c400fdf2d99e882e8caddbdaeb5018b93c780ff4 suraj_gupta <suraj520876@gmail.com> 1626835244 +0545	commit (merge): Merge branch 'main' into suraj1
+c400fdf2d99e882e8caddbdaeb5018b93c780ff4 a9ebce27107de3e7e4d350a9519a492bb73542da suraj_gupta <suraj520876@gmail.com> 1626835433 +0545	revert: Revert "to check suraj1"

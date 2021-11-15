@@ -1,0 +1,52 @@
+0000000000000000000000000000000000000000 0b8c58c90db62975ade2f4ef10055360d8c9bc22 suraj_gupta <suraj520876@gmail.com> 1618676572 +0545	clone: from https://github.com/kaflin/Blog-FrontEnd.git
+0b8c58c90db62975ade2f4ef10055360d8c9bc22 30fe88bb612d229ebf5a0bcd33a7fd586f96702f suraj_gupta <suraj520876@gmail.com> 1618677099 +0545	checkout: moving from main to suraj1
+30fe88bb612d229ebf5a0bcd33a7fd586f96702f 0b8c58c90db62975ade2f4ef10055360d8c9bc22 suraj_gupta <suraj520876@gmail.com> 1618677160 +0545	checkout: moving from suraj1 to main
+0b8c58c90db62975ade2f4ef10055360d8c9bc22 30fe88bb612d229ebf5a0bcd33a7fd586f96702f suraj_gupta <suraj520876@gmail.com> 1618760463 +0545	checkout: moving from main to suraj1
+30fe88bb612d229ebf5a0bcd33a7fd586f96702f 0b8c58c90db62975ade2f4ef10055360d8c9bc22 suraj_gupta <suraj520876@gmail.com> 1618760476 +0545	checkout: moving from suraj1 to main
+0b8c58c90db62975ade2f4ef10055360d8c9bc22 9783b9b6075cdffaafe58a32469a7190a1e074f7 suraj_gupta <suraj520876@gmail.com> 1618760550 +0545	commit: Added user-registration html part
+9783b9b6075cdffaafe58a32469a7190a1e074f7 ae9a281289bb1fe8547ed99e0d13563e92a6c0e9 suraj_gupta <suraj520876@gmail.com> 1618760557 +0545	commit: Added user-registration html part
+ae9a281289bb1fe8547ed99e0d13563e92a6c0e9 30fe88bb612d229ebf5a0bcd33a7fd586f96702f suraj_gupta <suraj520876@gmail.com> 1618760601 +0545	checkout: moving from main to suraj1
+30fe88bb612d229ebf5a0bcd33a7fd586f96702f ae9a281289bb1fe8547ed99e0d13563e92a6c0e9 suraj_gupta <suraj520876@gmail.com> 1618760625 +0545	pull --no-stat -v --progress origin main: Fast-forward
+ae9a281289bb1fe8547ed99e0d13563e92a6c0e9 ae9a281289bb1fe8547ed99e0d13563e92a6c0e9 suraj_gupta <suraj520876@gmail.com> 1618760739 +0545	checkout: moving from suraj1 to main
+ae9a281289bb1fe8547ed99e0d13563e92a6c0e9 75ed543dacadad2e718e460211c4b394c56dd4c3 suraj_gupta <suraj520876@gmail.com> 1619252840 +0545	commit: created register component for registration
+75ed543dacadad2e718e460211c4b394c56dd4c3 31f7a32386ff612695d14ea091f0270ed4e09f24 suraj_gupta <suraj520876@gmail.com> 1619253067 +0545	commit: created register component for registration
+31f7a32386ff612695d14ea091f0270ed4e09f24 dfde8cc7ac18efe5b438f8bdad41603dec94ade4 suraj_gupta <suraj520876@gmail.com> 1621687735 +0545	commit: Latest
+dfde8cc7ac18efe5b438f8bdad41603dec94ade4 79f8715c54903d43d42a03382bc9f10f57754a02 suraj_gupta <suraj520876@gmail.com> 1626834377 +0545	checkout: moving from main to suraj
+79f8715c54903d43d42a03382bc9f10f57754a02 dfde8cc7ac18efe5b438f8bdad41603dec94ade4 suraj_gupta <suraj520876@gmail.com> 1626834395 +0545	merge main: Fast-forward
+dfde8cc7ac18efe5b438f8bdad41603dec94ade4 ae9a281289bb1fe8547ed99e0d13563e92a6c0e9 suraj_gupta <suraj520876@gmail.com> 1626834411 +0545	checkout: moving from suraj to suraj1
+ae9a281289bb1fe8547ed99e0d13563e92a6c0e9 dfde8cc7ac18efe5b438f8bdad41603dec94ade4 suraj_gupta <suraj520876@gmail.com> 1626834422 +0545	merge main: Fast-forward
+dfde8cc7ac18efe5b438f8bdad41603dec94ade4 dfde8cc7ac18efe5b438f8bdad41603dec94ade4 suraj_gupta <suraj520876@gmail.com> 1626834442 +0545	checkout: moving from suraj1 to main
+dfde8cc7ac18efe5b438f8bdad41603dec94ade4 dfde8cc7ac18efe5b438f8bdad41603dec94ade4 suraj_gupta <suraj520876@gmail.com> 1626834452 +0545	checkout: moving from main to suraj
+dfde8cc7ac18efe5b438f8bdad41603dec94ade4 d4310e682dbce868f1abea92550c75b551cfec9c suraj_gupta <suraj520876@gmail.com> 1626834497 +0545	commit: to check
+d4310e682dbce868f1abea92550c75b551cfec9c dfde8cc7ac18efe5b438f8bdad41603dec94ade4 suraj_gupta <suraj520876@gmail.com> 1626834608 +0545	checkout: moving from suraj to suraj1
+dfde8cc7ac18efe5b438f8bdad41603dec94ade4 d86d51adb4d6b722e8f7b13132923d914e4254d1 suraj_gupta <suraj520876@gmail.com> 1626834633 +0545	commit: to check suraj1
+d86d51adb4d6b722e8f7b13132923d914e4254d1 dfde8cc7ac18efe5b438f8bdad41603dec94ade4 suraj_gupta <suraj520876@gmail.com> 1626834952 +0545	checkout: moving from suraj1 to main
+dfde8cc7ac18efe5b438f8bdad41603dec94ade4 4cca0e47945bccc117291931ce7695ad7a5992bf suraj_gupta <suraj520876@gmail.com> 1626834962 +0545	merge origin/main: Fast-forward
+4cca0e47945bccc117291931ce7695ad7a5992bf d86d51adb4d6b722e8f7b13132923d914e4254d1 suraj_gupta <suraj520876@gmail.com> 1626835008 +0545	checkout: moving from main to suraj1
+d86d51adb4d6b722e8f7b13132923d914e4254d1 235bafeb91b7d24d4edbf64cc3f1a5f7f3da24de suraj_gupta <suraj520876@gmail.com> 1626835085 +0545	commit: to check suraj1
+235bafeb91b7d24d4edbf64cc3f1a5f7f3da24de 4cca0e47945bccc117291931ce7695ad7a5992bf suraj_gupta <suraj520876@gmail.com> 1626835136 +0545	checkout: moving from suraj1 to main
+4cca0e47945bccc117291931ce7695ad7a5992bf 235bafeb91b7d24d4edbf64cc3f1a5f7f3da24de suraj_gupta <suraj520876@gmail.com> 1626835161 +0545	checkout: moving from main to suraj1
+235bafeb91b7d24d4edbf64cc3f1a5f7f3da24de c400fdf2d99e882e8caddbdaeb5018b93c780ff4 suraj_gupta <suraj520876@gmail.com> 1626835244 +0545	commit (merge): Merge branch 'main' into suraj1
+c400fdf2d99e882e8caddbdaeb5018b93c780ff4 4cca0e47945bccc117291931ce7695ad7a5992bf suraj_gupta <suraj520876@gmail.com> 1626835354 +0545	checkout: moving from suraj1 to main
+4cca0e47945bccc117291931ce7695ad7a5992bf 506d8b832dcd5ad6cde7f1eb16d2e985351cff64 suraj_gupta <suraj520876@gmail.com> 1626835364 +0545	merge origin/main: Fast-forward
+506d8b832dcd5ad6cde7f1eb16d2e985351cff64 c400fdf2d99e882e8caddbdaeb5018b93c780ff4 suraj_gupta <suraj520876@gmail.com> 1626835394 +0545	checkout: moving from main to suraj1
+c400fdf2d99e882e8caddbdaeb5018b93c780ff4 a9ebce27107de3e7e4d350a9519a492bb73542da suraj_gupta <suraj520876@gmail.com> 1626835433 +0545	revert: Revert "to check suraj1"
+a9ebce27107de3e7e4d350a9519a492bb73542da 506d8b832dcd5ad6cde7f1eb16d2e985351cff64 suraj_gupta <suraj520876@gmail.com> 1626835607 +0545	checkout: moving from suraj1 to main
+506d8b832dcd5ad6cde7f1eb16d2e985351cff64 8057cfe96c4a2a0bd11b83f010bf3a78ce98559d suraj_gupta <suraj520876@gmail.com> 1626835688 +0545	merge suraj1: Merge made by the 'recursive' strategy.
+8057cfe96c4a2a0bd11b83f010bf3a78ce98559d 8057cfe96c4a2a0bd11b83f010bf3a78ce98559d suraj_gupta <suraj520876@gmail.com> 1627808724 +0545	checkout: moving from main to login
+8057cfe96c4a2a0bd11b83f010bf3a78ce98559d dda2d59d08f7f4ff6915e4ebd93b1c3dbbe2af8c suraj_gupta <suraj520876@gmail.com> 1627808812 +0545	commit: Implemented Login Functionality
+dda2d59d08f7f4ff6915e4ebd93b1c3dbbe2af8c 8057cfe96c4a2a0bd11b83f010bf3a78ce98559d suraj_gupta <suraj520876@gmail.com> 1627809065 +0545	checkout: moving from login to main
+8057cfe96c4a2a0bd11b83f010bf3a78ce98559d 4f78757d92410f114b8584b1d106eeb4f61a5da5 suraj_gupta <suraj520876@gmail.com> 1627809078 +0545	merge origin/main: Fast-forward
+4f78757d92410f114b8584b1d106eeb4f61a5da5 4f78757d92410f114b8584b1d106eeb4f61a5da5 suraj_gupta <suraj520876@gmail.com> 1628736674 +0545	checkout: moving from main to RefreshToken
+4f78757d92410f114b8584b1d106eeb4f61a5da5 e7bfb9b15680d653a67f79906e65405e64fdcd17 suraj_gupta <suraj520876@gmail.com> 1628736807 +0545	commit: Implemenet Refresh Token
+e7bfb9b15680d653a67f79906e65405e64fdcd17 9169b98db5b085cb7f867cb932135b5929268b2f suraj_gupta <suraj520876@gmail.com> 1628736933 +0545	commit: Implemenet Refresh Token
+9169b98db5b085cb7f867cb932135b5929268b2f 4f78757d92410f114b8584b1d106eeb4f61a5da5 suraj_gupta <suraj520876@gmail.com> 1628737032 +0545	checkout: moving from RefreshToken to main
+4f78757d92410f114b8584b1d106eeb4f61a5da5 9c0b2ab612ef8492a417afb4a7489c1a263b7620 suraj_gupta <suraj520876@gmail.com> 1628737041 +0545	merge origin/main: Fast-forward
+9c0b2ab612ef8492a417afb4a7489c1a263b7620 9c0b2ab612ef8492a417afb4a7489c1a263b7620 suraj_gupta <suraj520876@gmail.com> 1629599338 +0545	checkout: moving from main to Creation_of_Subreddit
+9c0b2ab612ef8492a417afb4a7489c1a263b7620 ef9571f3be2d808848b7103516b4be9fb45fc120 suraj_gupta <suraj520876@gmail.com> 1629599492 +0545	commit: Successful implementation of subReddit
+ef9571f3be2d808848b7103516b4be9fb45fc120 9c0b2ab612ef8492a417afb4a7489c1a263b7620 suraj_gupta <suraj520876@gmail.com> 1629599584 +0545	checkout: moving from Creation_of_Subreddit to main
+9c0b2ab612ef8492a417afb4a7489c1a263b7620 ef9571f3be2d808848b7103516b4be9fb45fc120 suraj_gupta <suraj520876@gmail.com> 1629599647 +0545	checkout: moving from main to Creation_of_Subreddit
+ef9571f3be2d808848b7103516b4be9fb45fc120 9c0b2ab612ef8492a417afb4a7489c1a263b7620 suraj_gupta <suraj520876@gmail.com> 1629599672 +0545	checkout: moving from Creation_of_Subreddit to main
+9c0b2ab612ef8492a417afb4a7489c1a263b7620 ef9571f3be2d808848b7103516b4be9fb45fc120 suraj_gupta <suraj520876@gmail.com> 1629603389 +0545	checkout: moving from main to Creation_of_Subreddit
+ef9571f3be2d808848b7103516b4be9fb45fc120 9c0b2ab612ef8492a417afb4a7489c1a263b7620 suraj_gupta <suraj520876@gmail.com> 1629603628 +0545	checkout: moving from Creation_of_Subreddit to main
+9c0b2ab612ef8492a417afb4a7489c1a263b7620 9c0b2ab612ef8492a417afb4a7489c1a263b7620 suraj_gupta <suraj520876@gmail.com> 1629603741 +0545	checkout: moving from main to main
